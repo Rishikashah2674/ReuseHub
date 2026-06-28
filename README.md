@@ -145,34 +145,102 @@ Match Score: 100%
 
 ---
 
-# 📂 Project Structure
-
-```
 ReuseHub
 │
 ├── frontend
 │   │
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── assets
-│   │   └── App.jsx
+│   ├── public
 │   │
-│   └── package.json
+│   ├── src
+│   │   │
+│   │   ├── assets
+│   │   │   └── Images, logos, static files
+│   │   │
+│   │   ├── components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── ListingCard.jsx
+│   │   │   ├── DemandCard.jsx
+│   │   │   ├── MatchCard.jsx
+│   │   │   └── Reusable UI Components
+│   │   │
+│   │   ├── pages
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Marketplace.jsx
+│   │   │   ├── Listings.jsx
+│   │   │   ├── AddListing.jsx
+│   │   │   ├── Demands.jsx
+│   │   │   ├── RaiseDemand.jsx
+│   │   │   ├── Matches.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Analytics.jsx
+│   │   │   └── Profile.jsx
+│   │   │
+│   │   ├── services
+│   │   │   ├── api.js
+│   │   │   ├── wasteService.js
+│   │   │   ├── demandService.js
+│   │   │   ├── matchService.js
+│   │   │   └── mockData.js
+│   │   │
+│   │   ├── hooks
+│   │   │   └── Custom React Hooks
+│   │   │
+│   │   ├── utils
+│   │   │   └── Helper Functions
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
 │
 │
 ├── backend
 │   │
 │   ├── controllers
+│   │   ├── authController.js
+│   │   ├── listingController.js
+│   │   ├── demandController.js
+│   │   ├── matchController.js
+│   │   └── userController.js
+│   │
 │   ├── models
+│   │   ├── User.js
+│   │   ├── WasteListing.js
+│   │   ├── Demand.js
+│   │   └── Match.js
+│   │
 │   ├── routes
+│   │   ├── authRoutes.js
+│   │   ├── listingRoutes.js
+│   │   ├── demandRoutes.js
+│   │   ├── matchRoutes.js
+│   │   └── userRoutes.js
+│   │
 │   ├── services
+│   │   └── matchingService.js
+│   │
 │   ├── middleware
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── config
+│   │   └── db.js
+│   │
+│   ├── .env
 │   ├── server.js
-│   └── package.json
+│   ├── package.json
+│   └── package-lock.json
 │
-└── README.md
+│
+├── README.md
+├── .gitignore
+└── LICENSE
 ```
 
 ---
